@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    
+  <xsd:element name="time">
+    <xsd:complexType>
+      <xsd:simpleContent>
+        <xsd:extension base="timeType">
+          <xsd:attribute name="type">
+            <xsd:simpleType>
+              <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="plan"/>
+                <xsd:enumeration value="current"/>
+                <xsd:enumeration value="prognosis"/>
+                <xsd:enumeration value="other"/>
+              </xsd:restriction>
+            </xsd:simpleType>
+          </xsd:attribute>
+        </xsd:extension>
+      </xsd:simpleContent>
+    </xsd:complexType>
+  </xsd:element>
+  
+  <xsd:simpleType name="timeType">
+    <xsd:restriction base="xsd:time">
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>

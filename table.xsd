@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="airport.xsd"/>
+    <xsd:include schemaLocation="time.xsd"/>
+  
+    <xsd:element name="arrivalTable">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element ref="flight" minOccurs="0" maxOccurs="10"/>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="flight">
+      <xsd:complexType>
+        <xsd:sequence>
+            
+            <xsd:element name="number">
+                <xsd:simpleType>
+                    <xsd:restriction base ="xsd:string">
+                        <xsd:pattern value="[A-Z0-9]{2,}-[A-Z0-9]{3,}"></xsd:pattern>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            
+            <xsd:element name="departure">
+                <xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="flightTime" />
+						<xsd:element ref="depAirport" />
+					</xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+                
+            <xsd:element name="arrival">
+                <xsd:complexType>
+					<xsd:sequence>
+						<xsd:element ref="flightTime" />
+						<xsd:element ref="arrAirport" />
+					</xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="flightTime">
+      <xsd:complexType>
+          <xsd:sequence>
+              <xsd:element ref="time" minOccurs="1" maxOccurs="unbounded"/>
+          </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="depAirport">
+      <xsd:complexType>
+		<xsd:sequence>
+			<xsd:element ref="airport"/>
+		</xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="arrAirport">
+      <xsd:complexType>
+          <xsd:sequence>
+              <xsd:element ref="airport" minOccurs="1" maxOccurs="unbounded"/>
+          </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+
+
+</xsd:schema>

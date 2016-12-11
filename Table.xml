@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="table.xsl"?>
+<arrivalTable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="table.xsd">
+    <flight>
+        <number>P4-529</number>
+        <departure>
+            <flightTime>
+                <time type="plan">08:34:00</time>
+                <time type="current">10:55:00</time>
+            </flightTime>
+            <depAirport>
+                <airport type="departure">ROM</airport>
+            </depAirport>
+        </departure>
+        <arrival>
+            <flightTime>
+                <time type="plan">14:14:00</time>
+                <time type="current">14:35:00</time>
+            </flightTime>
+            <arrAirport>
+                <airport type="arrival">DME</airport>
+            </arrAirport>
+        </arrival>
+    </flight>
+    <flight>
+        <number>W3-272</number>
+        <departure>
+            <flightTime>
+                <time type="plan">09:34:00</time>
+                <time type="current">09:55:00</time>
+            </flightTime>
+            <depAirport>
+                <airport type="departure">HLS</airport>
+            </depAirport>
+        </departure>
+        <arrival>
+            <flightTime>
+                <time type="plan">12:14:00</time>
+                <time type="current">12:35:00</time>
+            </flightTime>
+            <arrAirport>
+                <airport type ="changed">SHR</airport>
+                <airport type="arrival">DME</airport>
+            </arrAirport>
+        </arrival>
+    </flight>
+    <flight>
+        <number>P3-440</number>
+        <departure>
+            <flightTime>
+                <time type="plan">09:34:00</time>
+                <time type="current">09:55:00</time>
+            </flightTime>
+            <depAirport>
+                <airport type="departure">PUL</airport>
+            </depAirport>
+        </departure>
+        <arrival>
+            <flightTime>
+                <time type="current">15:14:00</time>
+            </flightTime>
+            <arrAirport>
+                <airport type="arrival">DME</airport>
+            </arrAirport>
+        </arrival>
+    </flight>
+    <flight>
+        <number>P3-4562</number>
+        <departure>
+            <flightTime>
+                <time type="current">13:10:00</time>
+            </flightTime>
+            <depAirport>
+                <airport type="departure">BER</airport>
+            </depAirport>
+        </departure>
+        <arrival>
+            <flightTime>
+                <time type="current">10:07:00</time>
+            </flightTime>
+            <arrAirport>
+                <airport type="arrival">DME</airport>
+            </arrAirport>
+        </arrival>
+    </flight>
+</arrivalTable>

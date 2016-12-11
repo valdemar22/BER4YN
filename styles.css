@@ -1,0 +1,33 @@
+
+HTML		{ font-size: 12pt;
+			  font-family: "OCR A Extended", sans-serif;
+			  color: #C1C050;
+			  background-color:#F5F0F0;
+			  }
+			  
+H1    		{ color: #313030;
+			  text-align: center;
+			}
+			  
+TABLE		{ border-color: #F5F0F0;
+			  text-indent:3px;
+			  background-color:#353030;
+			  }			
+TD			{ border-width: thin solid black;
+			  border-collapse: collapse;
+			  text-indent:3px;
+			  background-color:#353030;
+			  text-align: center;
+			  }					
+
+.redtext	{ color: #BB2020;
+			  }
+			  
+.bluetext	{ color: #3050BB;
+			  }
+			  
+.greentext	{ color: #25BB20;
+			  }			  
+
+.graytext	{ color: #757070;
+			  }
